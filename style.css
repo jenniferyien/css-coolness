@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+}
+#background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('http://jinqiaojs.com/hd/snowy-forest-hd-wallpaper-high-resolution-cx4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#snow {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #FCE7E8;
+          background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
