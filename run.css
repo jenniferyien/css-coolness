@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+}
+
+#background {
+  width: 400vw;
+  height: 100vh;
+  background-image: url('http://2.bp.blogspot.com/-xTkt6dVtCEQ/TXfidYy3aPI/AAAAAAAACbo/Fk8s0adpYJE/s1600/background_scene.png');
+  background-size: contain;
+  /*animation: scroll 30s infinite;*/
+  position: relative;
+}
+
+.streak {
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  top: 90vh;
+  border-radius: 20px;
+  background-color: yellow;
+  box-shadow: 1px 0px 20px red;
+  animation: zoom 1s infinite;
+}
+.streak2 {
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  top: 95vh;
+  border-radius: 20px;
+  background-color: yellow;
+  box-shadow: 1px 0px 20px red;
+  animation: zoom 1s infinite;
+}
+
+.streak3 {
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 92vh;
+  left: 10px;
+  border-radius: 20px;
+  background-color: yellow;
+  box-shadow: 1px 0px 20px red;
+  animation: zoom 1s infinite;
+}
+
+@keyframes zoom {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 2000px;
+  }
+}
+
+@keyframes scroll {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -300vw;
+  }
+}
