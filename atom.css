@@ -1,0 +1,29 @@
+.regularcircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #06B1F1;
+  position: relative;
+  top: 230px;
+  left: 430px;
+  transform: translate(50px) rotate(90deg);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg) translateX(50px)
+  }
+  100% {
+    transform: rotateZ(360deg) translateX(50px)
+  }
+}
